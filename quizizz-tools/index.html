@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            function getGuilds(token){
+                return fetch("https://discord.com/api/v9/users/@me/guilds", {
+                  "headers": {
+                    "authorization": token}}).then(res=>res.text())
+                }
+        </script>
+        <h1>Bad Website Developer</h1>
+    </body>
+</html>
